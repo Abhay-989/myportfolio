@@ -8,6 +8,9 @@ app.use(express.static('public'));
 app.get("/home",(req,res)=>{
     res.render("Home.ejs")
 })
+app.get("/",(req,res)=>{
+    res.render("Home.ejs")
+})
 app.get("/about",(req,res)=>{
     res.render("About.ejs")
 })
