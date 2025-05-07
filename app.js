@@ -20,6 +20,9 @@ app.get("/project",(req,res)=>{
 app.get("/contact",(req,res)=>{
     res.render("Contact.ejs")
 })
+app.get("/project4",(req,res)=>{
+    res.render("index.ejs")
+})
 
 
 app.listen(8080,()=>{
