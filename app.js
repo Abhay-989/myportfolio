@@ -5,27 +5,23 @@ app.set("view engine","ejs");
 const path=require("path");
 app.set("views",path.join(__dirname,"/views"));
 app.use(express.static('public')); 
-app.get("/home",(req,res)=>{
-    res.render("Home.ejs")
-})
+
 app.get("/",(req,res)=>{
-    res.render("Home.ejs")
+    res.render("home.ejs")
 })
 app.get("/about",(req,res)=>{
-    res.render("About.ejs")
+    res.render("about.ejs")
 })
 app.get("/skills",(req,res)=>{
-    res.render("Skills.ejs")
+    res.render("skills.ejs")
 })
 app.get("/project",(req,res)=>{
-    res.render("Project.ejs")
+    res.render("project.ejs")
 })
 app.get("/contact",(req,res)=>{
-    res.render("Contact.ejs")
+    res.render("contact.ejs")
 })
-app.get("/project4",(req,res)=>{
-    res.render("index.ejs")
-})
+
 
 
 app.listen(8080,()=>{
