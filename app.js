@@ -12,6 +12,9 @@ app.get("/",(req,res)=>{
 app.get("/about",(req,res)=>{
     res.render("about.ejs")
 })
+app.get("/home",(req,res)=>{
+    res.render("home.ejs")
+})
 app.get("/skills",(req,res)=>{
     res.render("skills.ejs")
 })
